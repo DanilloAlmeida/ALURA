@@ -1,0 +1,10 @@
+Qual é o seu tipo de dado?
+	- categórico
+	- ordinal
+	- intervalar
+	- racional
+		0 significa ausência
+
+Histograma
+	frequência de ocorrências de uma situação
+	CURVA NORMAL
