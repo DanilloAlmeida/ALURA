@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\.metadata\.plugins\org.eclipse.jdt.core
+312150970.index
+1642175237.index
+1557630702.index
+26406044.index
+2032847172.index
+2016769120.index
+2174185088.index

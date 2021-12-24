@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\v8\Curso-Java-parte-5-Pacotes-e-java.lang-capitulo4"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\v6\bytebank-herdado-conta"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\Projeto-v5\Curso-Java-parte-5-Pacotes-e-java.lang-capitulo1"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\Projeto-v5"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\Curso-Java-parte-5-Pacotes-e-java.lang-capitulo1.zip"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\projeto-v3"/>
+			<item value="D:\Google Drive\004 - Estudo\Alura\10-Java-e-java-lang\java5-projetos-v2"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>
