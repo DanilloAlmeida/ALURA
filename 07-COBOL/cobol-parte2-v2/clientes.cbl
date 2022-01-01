@@ -46,11 +46,18 @@
       ******************************************************************
        0001-PRINCIPAL SECTION.
            PERFORM 1000-INICIAR.
-           PERFORM 2000-PRECESSAR.
-           PERFORM 3000-FINALIZAR.
-       0001-PRINCIPAL SECTION.
-           MOVE 'MODULO - INCLUSAO' TO WRK-MODULO
+      *    PERFORM 2000-PRECESSAR.
+      *    PERFORM 3000-FINALIZAR.
+      *----------------------------------------------------------------*
+       1000-INICIAR SECTION.
+      *----------------------------------------------------------------*
            DISPLAY TELA.
            ACCEPT MENU.
+      *----------------------------------------------------------------*
+       2000-PROCESSAR SECTION.
+      *----------------------------------------------------------------*
+
+           MOVE 'MODULO - INCLUSAO' TO WRK-MODULO
+
            STOP RUN.
        END PROGRAM CLIENTES.
