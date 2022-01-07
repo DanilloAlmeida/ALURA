@@ -5,12 +5,30 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-      ******************************************************************
+      *----------------------------------------------------------------*
        PROGRAM-ID. CLIENTES.
       ******************************************************************
-       DATA DIVISION.
+       ENVIRONMENT DIVISION.
+      *----------------------------------------------------------------*
+       INPUT-OUTPUT SECTION.
+      *---------------------
+       FILE-CONTROL.
+           SELECT CLIENTES ASSIGN TO 'D:\CLIENTES.DAT'
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS RANDOM
+              FILE STATUS IS CLIENTES-STATUS
+              RECORD KEY CLIENTES-CHAVE.
       ******************************************************************
+       DATA DIVISION.
+      *----------------------------------------------------------------*
        FILE SECTION.
+      *-------------
+       FD CLIENTES.
+       01 CLIENTES-REG.
+          05 CLIENTES-CHAVE.
+             10 CLIENTES-FONE     PIC 9(09).
+          05 CLIENTES-NOME        PIC X(30).
+          05 CLIENTES-EMAIL       PIC X(40).
       *------------------------
        WORKING-STORAGE SECTION.
       *------------------------
@@ -18,6 +36,7 @@
        77 WRK-MODULO           PIC   X(25).
        77 WRK-OPCAO-RELATO     PIC   X(1).
        77 WRK-TECLA            PIC   X(1).
+       77 CLIENTES-STATUS      PIC   9(02).
 
       *------------------------
        SCREEN SECTION.
@@ -55,11 +74,18 @@
        0001-PRINCIPAL SECTION.
            PERFORM 1000-INICIAR.
            PERFORM 2000-PROCESSAR.
-      *    PERFORM 3000-FINALIZAR.
+           PERFORM 3000-FINALIZAR.
 
            STOP RUN.
       *----------------------------------------------------------------*
        1000-INICIAR SECTION.
+      *---------------------
+           OPEN I-O CLIENTES
+              IF CLIENTES-STATUS = 35 THEN
+                 OPEN OUTPUT CLIENTES
+                 CLOSE CLIENTES
+                 OPEN I-O CLIENTES
+              END-IF.
       *----------------------------------------------------------------*
            DISPLAY TELA.
            ACCEPT MENU.
@@ -105,9 +131,14 @@
 
       *----------------------------------------------------------------*
        5000-RELATORIO-TELA  SECTION.
-      *----------------------------------------------------------------*
+      *-----------------------------
            CONTINUE.
       *----------------------------------------------------------------*
        5010-RELATORIO-DISCO  SECTION.
-      *----------------------------------------------------------------*
+      *------------------------------
            CONTINUE.
+      *----------------------------------------------------------------*
+       3000-FINALIZAR SECTION.
+      *-----------------------
+           CLOSE CLIENTES.
+      *----------------------------------------------------------------*
