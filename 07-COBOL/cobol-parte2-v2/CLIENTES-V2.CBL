@@ -112,7 +112,8 @@
               WHEN OTHER
                  IF WRK-OPCAO NOT EQUAL 'X'
                     DISPLAY ' ENTRADA INVALIDA!!!'
-                    ACCEPT WRK-TECLA
+      *             ACCEPT WRK-TECLA
+                    ACCEPT WRK-TECLA AT 1314
                  END-IF
               END-EVALUATE.
 
