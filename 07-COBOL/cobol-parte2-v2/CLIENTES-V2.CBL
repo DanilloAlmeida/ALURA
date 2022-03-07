@@ -61,6 +61,19 @@
              05 LINE 13 COLUMN 15 VALUE 'OPCAO..: '.
              05 LINE 13 COLUMN 24 USING WRK-OPCAO.
 
+       01 TELA-REGISTRO.
+             05 CHAVE FOREGROUND-COLOR 2.
+                10 LINE 10 COLUMN 10 VALUE 'TELEFONE '.
+                10 COLUMN PLUS 2 PIC 9(99) USING CLIENTES-FONE
+                    BLANK WHEN ZEROS.
+
+             05 SS-DADOS.
+                10 LINE 11 COLUMN 10 VALUE 'NOME '.
+                10 COLUMN PLUS 2 PIC 9(99) USING CLIENTES-NOME.
+                10 LINE 11 COLUMN 10 VALUE 'E-MAIL '.
+                10 COLUMN PLUS 2 PIC 9(99) USING CLIENTES-EMAIL.
+
+
        01 MENU-RELATORIO.
              05 LINE 12 COLUMN 55 VALUE '1 - EM TELA'.
              05 LINE 13 COLUMN 55 VALUE '2 - EM DISCO'.
