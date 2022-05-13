@@ -24,7 +24,4 @@ public class GuardadorDeContas {
 		
 		return referencias[i];
 	}
-	
-	
-
 }
