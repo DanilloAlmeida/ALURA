@@ -10,11 +10,11 @@ public class Teste {
 //		int [] idades = new int[5];
 //		String[] nomes = new String[5];
 		
-		int idade = 29;
+//		int idade = 29;
 		
 //		Integer idadeRef = new Integer(29);
-		Integer idadeRef = Integer.valueOf(29);//autoboxing
-		int valor = idadeRef.intValue();//unboxing
+//		Integer idadeRef = Integer.valueOf(29);//autoboxing
+//		int valor = idadeRef.intValue();//unboxing
 		
 		String s = args[0];
 		
