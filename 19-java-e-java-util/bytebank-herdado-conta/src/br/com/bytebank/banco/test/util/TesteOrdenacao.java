@@ -10,7 +10,7 @@ import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
-public class Teste2 {
+public class TesteOrdenacao {
 
 	public static void main(String[] args) {
 		
