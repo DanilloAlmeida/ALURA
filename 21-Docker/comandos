@@ -1,0 +1,9 @@
+docker ps				lista conteiner em execução
+docker ps -a				
+docker container ls -a			mostra histórico de conteiners que executaram
+docker start <container_id>		executa uma imagem existente
+docker stop <container_id>		para o container
+docker pause <container_id>		pausa o container	 
+docker unpause <container_id>		despausa o container
+docker exec <container_id> 		executa um comando dentro de um container já criado
+docker run <imagem> 			cria um novo container a partir da imagem
