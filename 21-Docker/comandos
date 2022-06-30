@@ -7,3 +7,7 @@ docker pause <container_id>		pausa o container
 docker unpause <container_id>		despausa o container
 docker exec <container_id> 		executa um comando dentro de um container já criado
 docker run <imagem> 			cria um novo container a partir da imagem
+docker run -d				Run container in background and print container ID
+dorker port <container_id>			List port mappings or a specific mapping for the container
+docker run -p <container_id> [porta local] [porta container]		cria container setando a porta específica
+docker rmi 				remove imagem
