@@ -10,5 +10,17 @@ docker run <imagem> 			cria um novo container a partir da imagem
 docker run -d				    Run container in background and print container ID
 dorker port <container_id>			List port mappings or a specific mapping for the container
 docker run -p <container_id> [porta local] [porta container]		cria container setando a porta específica
-docker rmi 				        remove imagem
+docker rmi 				        			remove imagens  
+docker container rm $(docker container ls -aq)  			remove containers retornados do comanto ls
+docker rmi $(docker images -aq)	remove
 docker build -t [tag] .         cria imagem com a tag informada no diretório atual ( .).
+docker run -it -v ~/Desktop/ALURA/21-Docker:/app ubuntu bash		cria container especificando o volume
+docker run -it --mount source=/home/danillo/Desktop/ALURA/21-Docker:app ubuntu bash		utilizando
+docker volume ls				lista volumes
+docker volume create meu-volume		cria volume
+/var/lib/docker/volumes/			diretório de gerenciamento de volumes do docker
+docker network ls
+docker network create --driver bridge [nome da rede]
+docker run -it --name [nome do container] ubuntu
+docker run -d --name [pong] --network [nome da rede] ubuntu sleep 1d
+apt-get install iputils-ping -y
