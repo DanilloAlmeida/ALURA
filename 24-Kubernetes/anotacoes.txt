@@ -1,0 +1,4 @@
+minikube start --vm-driver=virtualbox
+kubectl get nodes
+kubectl apply -f primeiro-pod.yaml
+kubectl get pods
